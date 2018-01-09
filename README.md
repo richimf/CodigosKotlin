@@ -1,4 +1,4 @@
-# DESIGN PATTERNS EN KOTLIN #
+# DESIGN PATTERNS #
 
 ### CATEGORIAS ###
 
@@ -113,8 +113,8 @@ Ver [Dragger](https://google.github.io/dagger/android.html) para Android.
 
 
 #### SINGLETON ####
-Solo puede haber una instancia de la clase, pero cualquiera debe poder acceder a ella.
-En Kotlin usamos la palabra "object" para declarar un singleton
+Consiste en crear una instancia global de una clase, asi es, solo puede haber una instancia de la clase, pero cualquiera debe poder acceder a ella.
+En Kotlin usamos la palabra "object" para declarar un singleton:
 
 ```kotlin
 object ExampleSingleton {
@@ -150,22 +150,23 @@ public class Singleton {
 }
 ```
 
+Y en Swift:
 
+```Swift
+//Final is class modifier which prevents it from being inherited or being overridden.
+final class Singleton {
+    static let sharedInstance = Singleton()
 
+    private init(){
 
-
-
-
-
-
-
-
+    }
+}
+```
 
 
 ### REFERENCIAS ###
-Common Design Patterns for Android with Kotlin [Raywenderlich](https://www.raywenderlich.com/168038/common-design-patterns-android-kotlin)
-Dependency Injection [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)
-Readme
+* Common Design Patterns for Android with Kotlin [Raywenderlich](https://www.raywenderlich.com/168038/common-design-patterns-android-kotlin)
+* Dependency Injection [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)
 
 
 
